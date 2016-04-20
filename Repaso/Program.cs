@@ -10,7 +10,7 @@ namespace Repaso
     {
         static void Main(string[] args)
         {
-            cuentaOffShore cuentas = new cuentaOffShore();
+            Cliente ClienteUno = new Cliente()
         }
     }
 }

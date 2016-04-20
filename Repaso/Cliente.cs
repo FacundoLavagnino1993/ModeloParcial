@@ -22,22 +22,31 @@ namespace Repaso
 
         private static Cliente()
         { 
-        
+                
         }
 
         public Cliente(Enum.eTipoCliente cliente, string nombre)
-        { 
-        
+        {
+            this._nombre = nombre;
+            this._tipoCliente = cliente;
+
         }
 
         public Cliente(Enum.eTipoCliente cliente, string nombre, string nacionalidad)
-        { 
-        
+        {
+            this._tipoCliente = cliente;
+            this._nombre = nombre;
+            this._nacionalidad = nacionalidad;
         }
         
         public Cliente(string nombre)
         {
- 
+            this._nombre = nombre;
+        }
+
+        public void creaAlias(string nacionalidad, Enum.eTipoCliente cliente)
+        {
+
         }
     }
 }
